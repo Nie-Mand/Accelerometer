@@ -1,7 +1,7 @@
 import { useAccelerometer } from './Accelerometer'
 
 function geV(v: number) {
-  return Math.round(v * 10) / 180
+  return Math.round(Math.abs(v) * 10) / 90
 }
 
 function getClipPath(alpha: number) {
