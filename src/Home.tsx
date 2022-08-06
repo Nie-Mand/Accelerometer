@@ -1,7 +1,11 @@
 import { useAccelerometer } from './Accelerometer'
 
+function geV(v: number) {
+  return Math.round(v * 10) / 180
+}
+
 function getClipPath(alpha: number) {
-  return `polygon(0 0, 100% 0, ${100 - alpha}% 100%, ${alpha}% 100%)`
+  return `polygon(0 0, 100% 0, ${100 - geV(alpha)}% 100%, ${geV(alpha)}% 100%)`
 }
 
 export default function Home() {
