@@ -13,7 +13,7 @@ export default function Home() {
         alt="nft"
         className="duration-200"
         style={{
-          clipPath: getClipPath(rotation!.alpha || 0),
+          clipPath: getClipPath(rotation?.alpha || 0),
         }}
       />
     </div>
